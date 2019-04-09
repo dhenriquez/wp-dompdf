@@ -5,7 +5,7 @@
     Plugin URI: https://www.dhenriquez.cl
     Author: Daniel Henríquez
     Author URI: https://www.dhenriquez.cl
-    Version: 0.8.3
+    Version: 1.0.0
 */
 
 define('WP_DOMPDF_PLUGIN', plugin_dir_path(__FILE__));
@@ -17,10 +17,8 @@ use Dompdf\Dompdf;
 $PUC = Puc_v4_Factory::buildUpdateChecker( 'https://github.com/dhenriquez/wp-dompdf', __FILE__, 'wp-dompdf');
 $PUC->setAuthentication('f5bac1ffc8f683b154fab9051fd575899bf4aee3');
 
-if(class_exists('Dompdf')){
-    function wp_dompdf(){
-        return new Dompdf();
-    }
+function wp_dompdf(){
+    return new Dompdf();
 }
 
 ?>
