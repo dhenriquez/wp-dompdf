@@ -15,7 +15,7 @@ require_once WP_DOMPDF_PLUGIN . 'lib/dompdf/autoload.inc.php';
 use Dompdf\Dompdf;
 
 $PUC = Puc_v4_Factory::buildUpdateChecker( 'https://github.com/dhenriquez/wp-dompdf', __FILE__, 'wp-dompdf');
-$PUC->setAuthentication('f5bac1ffc8f683b154fab9051fd575899bf4aee3');
+$PUC->setAuthentication('1f379bdf369d399e7132348a985e52e323270e3f');
 
 function wp_dompdf(){
     return new Dompdf();
