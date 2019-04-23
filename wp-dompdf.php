@@ -5,7 +5,7 @@
     Plugin URI: https://www.dhenriquez.cl
     Author: Daniel Henríquez
     Author URI: https://www.dhenriquez.cl
-    Version: 1.0.0
+    Version: 1.0.1
 */
 
 define('WP_DOMPDF_PLUGIN', plugin_dir_path(__FILE__));
